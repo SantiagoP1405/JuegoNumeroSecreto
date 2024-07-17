@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <!-- Header (encabezado) -->
+                    <h1></h1>
+
+                    <!-- Párrafo -->
+                    <p class="texto__parrafo"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input"> <!-- El ID sirve apra diferenciar el input, en caso de que haya más de uno. En este caso, este input es de número (sólo acepta números) y los valores que se le pueden ingresar son entre 1 y 10-->
+                <div class="chute container__botones">
+
+                    <!-- Etiquetas para crear botones -->
+                    <button onclick="verificarIntento();" class="container__boton" id = "intentar">Intentar</button> <!-- Se mete una función en el onclick, que es el bloque de código de JS que se va a ejecutar cuando se le de click -->
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button> <!-- Este botón de momento está desactivado, porque en uno de sus atrbutos dice disabled -->
+
+                    <!-- "on" es un prefijo que se utiliza para indicar un evento en HTML. "onclick" significa "cuando se hace clic en este elemento -->
+
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+
+
+
+
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
